@@ -5,7 +5,7 @@ class password:
     def __init__(self,pas):
         self.pas=pas
     def message(self):
-        os.system("cls")
+        print("The password is Acceptable.\n")
         p=input("\nEnter the password : ")
         l1=[1,2,3,4,5,6,7,8,9,0]
         l2=["+","-","X"]
@@ -48,7 +48,7 @@ res3=re.search("[0-9]",txt)
 res4=re.search("[!@#$&]",txt)
 x=password(txt)
 if (res1 and res2 and res3 and res4 and (len(txt)>=8)):
-    print("The password is Acceptable.")
+    os.system("cls")
     x.message()
 else:
     print("The password is not Acceptable.")
