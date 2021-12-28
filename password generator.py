@@ -8,7 +8,7 @@ class password:
         os.system("cls")
         p=input("\nEnter the password : ")
         l1=[1,2,3,4,5,6,7,8,9,0]
-        l2=["+","-","*"]
+        l2=["+","-","X"]
         if(p==self.pas):
             print("\nCAPTCHA : ")
             a=random.choice(l1)
@@ -23,12 +23,12 @@ class password:
                     print("WRONG CAPTCHA !!\n")
             if(b=="-"):
                 if(n==a-c):
-                    print("Hi programmer..! You Code is verified..!!\n")
+                    print("Hi programmer..! Your Code is verified..!!\n")
                 else:
                     print("WRONG CAPTCHA !!\n")
-            if(b=="*"):
+            if(b=="X"):
                 if(n==a*c):
-                    print("Hi programmer..! You Code is verified..!!\n")
+                    print("Hi programmer..! Your Code is verified..!!\n")
                 else:
                     print("WRONG CAPTCHA !!\n")
         else:
