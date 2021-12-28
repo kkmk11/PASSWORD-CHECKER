@@ -51,5 +51,5 @@ if (res1 and res2 and res3 and res4 and (len(txt)>=8)):
     os.system("cls")
     x.message()
 else:
-    print("The password is not Acceptable.")
+    print("The password is not Acceptable.\n")
 
